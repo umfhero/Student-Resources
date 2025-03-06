@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Resources</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/logo.png" alt="Cybersecurity Society Logo" class="logo">
+        </div>
+        <h1>Student Resources</h1>
+        <p>Download files for your projects</p>
+    </header>
+
+    <main>
+        <section class="category">
+            <h2 onclick="toggleDropdown('project1')">Project 1: Brute Force ▼</h2>
+            <div id="project1" class="files dropdown-content">
+                <a href="files/Password_Cracking-protected.pdf" download class="file-link">Password protected (PDF)</a>
+                <a href="files/protected.zip" download class="file-link">Password protected (ZIP)</a>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2 onclick="toggleDropdown('project2')">Project 2: TBD ▼</h2>
+            <div id="project2" class="files dropdown-content">
+                <a href="files/project2-guide.pdf" download class="file-link">Download Guide (PDF)</a>
+                <a href="files/project2-resources.zip" download class="file-link">Download Resources (ZIP)</a>
+            </div>
+        </section>
+
+        <!-- Add more categories as needed -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            dropdown.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
