@@ -5,35 +5,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Resources</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="/logo.png" alt="Cybersecurity Society Logo" class="logo">
+            <img src="logo.png" alt="Cybersecurity Society Logo" class="logo">
         </div>
-        <h1>Cyber Security Society</h1>
-        <h2>Student Resources</h2>
-        <p>Download hub for your projects</p>
+        <h1>Student Resources</h1>
+        <p>Download files and explore useful links for your projects</p>
     </header>
 
     <main>
-        <section class="category">
-            <h2 onclick="toggleDropdown('project1')">Project 1: Brute Force ▼</h2>
-            <div id="project1" class="files dropdown-content">
-                <a href="files/Password_Cracking-protected.pdf" download class="file-link">Password protected (PDF)</a>
-                <a href="files/protected.zip" download class="file-link">Password protected (ZIP)</a>
+        <!-- Downloads Section -->
+        <section class="section">
+            <h2 onclick="toggleDropdown('downloads')">📁 Downloads ▼</h2>
+            <div id="downloads" class="dropdown-content">
+                <div class="category">
+                    <h3 onclick="toggleDropdown('project1')">🔓 Project 1: Breaking In ▼</h3>
+                    <div id="project1" class="files dropdown-content">
+                        <a href="files/Password_Cracking-protected.pdf" download class="file-link">Download password protected PDF</a>
+                        <a href="files/protected.zip" download class="file-link">Download password protected Zip</a>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <h3 onclick="toggleDropdown('project2')">🔐 Project 2: TBD ▼</h3>
+                    <div id="project2" class="files dropdown-content">
+                        <a href="files/ElonIsntPresident.jpg" download class="file-link">Download TBD</a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="category">
-            <h2 onclick="toggleDropdown('project2')">Project 2: TBD ▼</h2>
-            <div id="project2" class="files dropdown-content">
-                <a href="files/project2-guide.pdf" download class="file-link">Download Guide (PDF)</a>
-                <a href="files/project2-resources.zip" download class="file-link">Download Resources (ZIP)</a>
+        <!-- Links Section -->
+        <section class="section">
+            <h2 onclick="toggleDropdown('links')">🔗 Links ▼</h2>
+            <div id="links" class="dropdown-content">
+                <!-- Hacking Labs Subcategory -->
+                <div class="category">
+                    <h3 onclick="toggleDropdown('hacking-labs')">💻 Hacking Labs ▼</h3>
+                    <div id="hacking-labs" class="files dropdown-content">
+                        <div class="link-item">
+                            <a href="https://play.picoctf.org/practice?page=1&solved=0" target="_blank" class="link-link">
+                                <i class="fas fa-link link-icon"></i>
+                                <span class="link-title">PicoCTF Gym</span>
+                            </a>
+                        </div>
+
+                        <div class="link-item">
+                            <a href="https://pentesterlab.com/exercises/recon-00" target="_blank" class="link-link">
+                                <i class="fas fa-link link-icon"></i>
+                                <span class="link-title">Pentesterlab (Recon-00)</span>
+                            </a>
+                        </div>
+
+                        <div class="link-item">
+                            <a href="https://overthewire.org/wargames/bandit/bandit0.html" target="_blank" class="link-link">
+                                <i class="fas fa-link link-icon"></i>
+                                <span class="link-title">Overthewire</span>
+                            </a>
+                        </div>
+
+                        <div class="link-item">
+                            <a href="https://academy.hackthebox.com/dashboard" target="_blank" class="link-link">
+                                <i class="fas fa-link link-icon"></i>
+                                <span class="link-title">HackTheBox (HTB)</span>
+                            </a>
+                        </div>
+
+                        <div class="link-item">
+                            <a href="https://app.codecrafters.io/catalog" class="link-link">
+                                <i class="fas fa-link link-icon"></i>
+                                <span class="link-title">Project - Build your own ...</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hacking Tools Subcategory -->
+                <div class="category">
+                    <h3 onclick="toggleDropdown('hacking-tools')">🛠️ Hacking Tools ▼</h3>
+                    <div id="hacking-tools" class="files dropdown-content">
+                        <div class="link-item">
+                            <a href="https://gchq.github.io/CyberChef/" target="_blank" class="link-link">
+                                <i class="fas fa-link link-icon"></i>
+                                <span class="link-title">CyberChef</span>
+                            </a>
+                        </div>
+
+                        <div class="link-item">
+                            <a href="https://dogbolt.org/" target="_blank" class="link-link">
+                                <i class="fas fa-link link-icon"></i>
+                                <span class="link-title">Decompiler Explorer</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linux Commands/Bash Subcategory -->
+                <div class="category">
+                    <h3 onclick="toggleDropdown('linux-bash')">🐧 Linux Commands/Bash (info) ▼</h3>
+                    <div id="linux-bash" class="files dropdown-content">
+                        <div class="link-item">
+                            <a href="https://github.com/jlevy/the-art-of-command-line" target="_blank" class="link-link">
+                                <i class="fas fa-link link-icon"></i>
+                                <span class="link-title">Github - The Art of Command Line</span>
+                            </a>
+                        </div>
+
+                        <div class="link-item">
+                            <a href="https://www.gnu.org/software/bash/manual/bash.html" target="_blank" class="link-link">
+                                <i class="fas fa-link link-icon"></i>
+                                <span class="link-title">Bash Reference Manual</span>
+                            </a>
+                        </div>
+
+                        <div class="link-item">
+                            <a href="https://en.wikipedia.org/wiki/List_of_Linux_distributions" target="_blank" class="link-link">
+                                <i class="fas fa-link link-icon"></i>
+                                <span class="link-title">Linux Distros</span>
+                            </a>
+                        </div>
+
+                        <div class="link-item">
+                            <a href="https://gist.github.com/bradtraversy/cc180de0edee05075a6139e42d5f28ce" target="_blank" class="link-link">
+                                <i class="fas fa-link link-icon"></i>
+                                <span class="link-title">Common Terminal Commands</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student Discounts Subcategory -->
+                <div class="category">
+                    <h3 onclick="toggleDropdown('student-discounts')">🎓 Student Discounts ▼</h3>
+                    <div id="student-discounts" class="files dropdown-content">
+                        <div class="link-item">
+                            <a href="https://education.github.com/pack" target="_blank" class="link-link">
+                                <i class="fas fa-link link-icon"></i>
+                                <span class="link-title">GitHub Student Developer Pack</span>
+                            </a>
+                        </div>
+
+                        <div class="link-item">
+                            <a href="https://www.jetbrains.com/student/" target="_blank" class="link-link">
+                                <i class="fas fa-link link-icon"></i>
+                                <span class="link-title">JetBrains Student License</span>
+                            </a>
+                        </div>
+
+                        <div class="link-item">
+                            <a href="https://cloud.google.com/edu/students" target="_blank" class="link-link">
+                                <i class="fas fa-link link-icon"></i>
+                                <span class="link-title">GCS</span>
+                            </a>
+                        </div>
+
+                        <div class="link-item">
+                            <a href="https://azure.microsoft.com/en-gb/free/students" target="_blank" class="link-link">
+                                <i class="fas fa-link link-icon"></i>
+                                <span class="link-title">Free Azure Credit (Build in the cloud for free)</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-
-        <!-- Add more categories as needed -->
     </main>
 
     <footer>
@@ -41,10 +180,33 @@
     </footer>
 
     <script>
+        // Function to toggle dropdown visibility
         function toggleDropdown(id) {
             const dropdown = document.getElementById(id);
-            dropdown.classList.toggle("show");
+            dropdown.classList.toggle('show');
+
+            // Save the state in a cookie
+            const isOpen = dropdown.classList.contains('show');
+            document.cookie = `${id}=${isOpen}; path=/; max-age=31536000`; // Save for 1 year
         }
+
+        // Function to load saved dropdown states
+        function loadDropdownStates() {
+            document.querySelectorAll('.dropdown-content').forEach((dropdown) => {
+                const id = dropdown.id;
+                const cookieValue = document.cookie
+                    .split('; ')
+                    .find((row) => row.startsWith(`${id}=`))
+                    ?.split('=')[1];
+
+                if (cookieValue === 'true') {
+                    dropdown.classList.add('show');
+                }
+            });
+        }
+
+        // Load dropdown states when the page loads
+        window.onload = loadDropdownStates;
     </script>
 </body>
 </html>
