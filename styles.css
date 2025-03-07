@@ -9,9 +9,9 @@ body {
 }
 
 header {
-    background-color: #1f1f1f;
+    background-color: #414141;
     padding: 20px;
-    text-align: center;
+
 }
 
 .logo-container {
@@ -19,8 +19,10 @@ header {
 }
 
 .logo {
-    max-width: 150px;
-    height: auto;
+    width: 150px;
+        /* Adjust size as needed */
+        height: auto;
+        border-radius: 10px;
 }
 
 header h1 {
@@ -44,7 +46,7 @@ main {
 
 .section h2 {
     font-size: 2rem;
-    color: #00ff88;
+    color: #82a784;
     margin-bottom: 10px;
     cursor: pointer;
     padding: 10px;
@@ -59,7 +61,7 @@ main {
 
 .category h3 {
     font-size: 1.5rem;
-    color: #00ff88;
+    color: #455446;
     margin-bottom: 10px;
     cursor: pointer;
     padding: 10px;
@@ -107,7 +109,7 @@ main {
 }
 
 .file-link:hover {
-    background-color: #00ff88;
+    background-color: #455446;
     color: #121212;
 }
 
@@ -156,23 +158,23 @@ footer p {
 
 /* QR Code Panel */
 .qr-panel {
-    margin-top: 20px;
+    margin-top: 1px;
     text-align: center;
-    background-color: #1f1f1f;
+    background-color: #414141;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px #000000;
 }
 
 .qr-code {
     width: 150px;
     /* Adjust size as needed */
     height: auto;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .qr-text {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    color: #00ff88;
+    margin-top: 1px;
+    font-size: 1.8rem;
+    color: #82a784;
 }
