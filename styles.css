@@ -153,3 +153,26 @@ footer p {
     font-size: 1rem;
     color: #bbbbbb;
 }
+
+/* QR Code Panel */
+.qr-panel {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #1f1f1f;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.qr-code {
+    width: 150px;
+    /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px;
+}
+
+.qr-text {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #00ff88;
+}
