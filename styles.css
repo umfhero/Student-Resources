@@ -90,6 +90,12 @@ main {
     gap: 10px;
 }
 
+.link-thumbnail {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 15px;
+}
 .file-link {
     display: inline-block;
     padding: 10px 15px;
