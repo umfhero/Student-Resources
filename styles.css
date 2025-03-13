@@ -207,6 +207,10 @@ footer p {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px #000000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .qr-code {
@@ -215,8 +219,14 @@ footer p {
     border-radius: 20px;
 }
 
+.whatsapp-icon {
+    font-size: 3.5rem;
+    color: #25D366;
+    margin-top: 10px;
+}
+
 .qr-text {
-    margin-top: 1px;
+    margin-top: 10px;
     font-size: 1.8rem;
     color: #aedbb0;
 }
