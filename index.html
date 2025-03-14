@@ -10,6 +10,28 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+    <style>
+        .tag {
+            display: inline-block;
+            padding: 0.2em 0.5em;
+            margin-left: 0.5em;
+            border-radius: 0.3em;
+            font-size: 0.8em;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .tag-green {
+            border-color: rgba(40, 167, 69, 0.5);
+        }
+        .tag-yellow {
+            border-color: rgba(255, 193, 7, 0.5);
+        }
+        .tag-red {
+            border-color: rgba(220, 53, 69, 0.5);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -125,44 +147,50 @@
                     <h3 onclick="toggleDropdown('hacking-labs', this)">💻 Hacking Labs ▶</h3>
                     <div id="hacking-labs" class="files dropdown-content">
                         <div class="link-item">
+                            <a href="https://tryhackme.com/dashboard" target="_blank" class="link-link">
+                                <span class="link-title">TryHackMe</span>
+                                <span class="tag tag-green">Tutorial/Hand Held</span>
+                            </a>
+                        </div>
+                        <div class="link-item">
                             <a href="https://play.picoctf.org/practice?page=1&solved=0" target="_blank" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://play.picoctf.org/practice?page=1&solved=0&viewport=1440x900&width=200" alt="PicoCTF Gym Thumbnail" class="link-thumbnail">
                                 <span class="link-title">PicoCTF Gym</span>
+                                <span class="tag tag-yellow">Difficult/Semi hints</span>
                             </a>
                         </div>
 
                         <div class="link-item">
                             <a href="https://pentesterlab.com/exercises/recon-00" target="_blank" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://pentesterlab.com/exercises/recon-00&viewport=1440x900&width=200" alt="Pentesterlab (Recon-00) Thumbnail" class="link-thumbnail">
                                 <span class="link-title">Pentesterlab (Recon-00)</span>
+                                <span class="tag tag-yellow">Difficult/Semi hints</span>
                             </a>
                         </div>
 
                         <div class="link-item">
                             <a href="https://ctflearn.com/dashboard" target="_blank" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://ctflearn.com/dashboard&viewport=1440x900&width=200" alt="CTFLEARN Thumbnail" class="link-thumbnail">
                                 <span class="link-title">CTFLEARN</span>
+                                <span class="tag tag-yellow">Difficult/Semi hints</span>
                             </a>
                         </div>
 
                         <div class="link-item">
                             <a href="https://overthewire.org/wargames/bandit/bandit0.html" target="_blank" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://overthewire.org/wargames/bandit/bandit0.html&viewport=1440x900&width=200" alt="Overthewire Thumbnail" class="link-thumbnail">
                                 <span class="link-title">Overthewire</span>
+                                <span class="tag tag-yellow">Difficult/Semi hints</span>
                             </a>
                         </div>
 
                         <div class="link-item">
                             <a href="https://academy.hackthebox.com/dashboard" target="_blank" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://academy.hackthebox.com/dashboard&viewport=1440x900&width=200" alt="HackTheBox (HTB) Thumbnail" class="link-thumbnail">
                                 <span class="link-title">HackTheBox (HTB)</span>
+                                <span class="tag tag-red">Difficult (needs some experience/knowledge)</span>
                             </a>
                         </div>
 
                         <div class="link-item">
                             <a href="https://app.codecrafters.io/catalog" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://app.codecrafters.io/catalog&viewport=1440x900&width=200" alt="Project - Build your own ... Thumbnail" class="link-thumbnail">
                                 <span class="link-title">Project - Build your own ...</span>
+                                <span class="tag tag-red">Difficult (needs some experience/knowledge)</span>
                             </a>
                         </div>
                     </div>
@@ -174,14 +202,12 @@
                     <div id="hacking-tools" class="files dropdown-content">
                         <div class="link-item">
                             <a href="https://gchq.github.io/CyberChef/" target="_blank" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://gchq.github.io/CyberChef/&viewport=1440x900&width=200" alt="CyberChef Thumbnail" class="link-thumbnail">
                                 <span class="link-title">CyberChef</span>
                             </a>
                         </div>
 
                         <div class="link-item">
                             <a href="https://dogbolt.org/" target="_blank" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://dogbolt.org/&viewport=1440x900&width=200" alt="Decompiler Explorer Thumbnail" class="link-thumbnail">
                                 <span class="link-title">Decompiler Explorer</span>
                             </a>
                         </div>
@@ -194,28 +220,24 @@
                     <div id="linux-bash" class="files dropdown-content">
                         <div class="link-item">
                             <a href="https://github.com/jlevy/the-art-of-command-line" target="_blank" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://github.com/jlevy/the-art-of-command-line&viewport=1440x900&width=200" alt="Github - The Art of Command Line Thumbnail" class="link-thumbnail">
                                 <span class="link-title">Github - The Art of Command Line</span>
                             </a>
                         </div>
 
                         <div class="link-item">
                             <a href="https://www.gnu.org/software/bash/manual/bash.html" target="_blank" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://www.gnu.org/software/bash/manual/bash.html&viewport=1440x900&width=200" alt="Bash Reference Manual Thumbnail" class="link-thumbnail">
                                 <span class="link-title">Bash Reference Manual</span>
                             </a>
                         </div>
 
                         <div class="link-item">
                             <a href="https://en.wikipedia.org/wiki/List_of_Linux_distributions" target="_blank" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://en.wikipedia.org/wiki/List_of_Linux_distributions&viewport=1440x900&width=200" alt="Linux Distros Thumbnail" class="link-thumbnail">
                                 <span class="link-title">Linux Distros</span>
                             </a>
                         </div>
 
                         <div class="link-item">
                             <a href="https://gist.github.com/bradtraversy/cc180de0edee05075a6139e42d5f28ce" target="_blank" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://gist.github.com/bradtraversy/cc180de0edee05075a6139e42d5f28ce&viewport=1440x900&width=200" alt="Common Terminal Commands Thumbnail" class="link-thumbnail">
                                 <span class="link-title">Common Terminal Commands</span>
                             </a>
                         </div>
@@ -228,28 +250,24 @@
                     <div id="student-discounts" class="files dropdown-content">
                         <div class="link-item">
                             <a href="https://education.github.com/pack" target="_blank" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://education.github.com/pack&viewport=1440x900&width=200" alt="GitHub Student Developer Pack Thumbnail" class="link-thumbnail">
                                 <span class="link-title">GitHub Student Developer Pack</span>
                             </a>
                         </div>
 
                         <div class="link-item">
                             <a href="https://www.jetbrains.com/student/" target="_blank" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://www.jetbrains.com/student/&viewport=1440x900&width=200" alt="JetBrains Student License Thumbnail" class="link-thumbnail">
                                 <span class="link-title">JetBrains Student License</span>
                             </a>
                         </div>
 
                         <div class="link-item">
                             <a href="https://cloud.google.com/edu/students" target="_blank" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://cloud.google.com/edu/students&viewport=1440x900&width=200" alt="GCS Thumbnail" class="link-thumbnail">
                                 <span class="link-title">GCS</span>
                             </a>
                         </div>
 
                         <div class="link-item">
                             <a href="https://azure.microsoft.com/en-gb/free/students" target="_blank" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://azure.microsoft.com/en-gb/free/students&viewport=1440x900&width=200" alt="Free Azure Credit Thumbnail" class="link-thumbnail">
                                 <span class="link-title">Free Azure Credit (Build in the cloud for free)</span>
                             </a>
                         </div>
@@ -264,27 +282,23 @@
                     <div id="student-courses" class="files dropdown-content">
                         <div class="link-item">
                             <a href="https://www.coursera.org/professional-certificates/google-cybersecurity" target="_blank" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://www.coursera.org/professional-certificates/google-cybersecurity&viewport=1440x900&width=200" alt="GitHub Student Developer Pack Thumbnail" class="link-thumbnail">
                                 <span class="link-title">Google Cybersecurity Professional Certificate</span>
                             </a>
                         </div>
                                                 <div class="link-item">
                             <a href="https://www.coursera.org/learn/it-security" target="_blank" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://www.coursera.org/learn/it-security&viewport=1440x900&width=200" alt="GitHub Student Developer Pack Thumbnail" class="link-thumbnail">
                                 <span class="link-title">IT Security: Defense against the digital dark arts</span>
                             </a>
                         </div>
 
                                                 <div class="link-item">
                             <a href="https://cyberepq.org.uk/" target="_blank" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://cyberepq.org.uk/&viewport=1440x900&width=200" alt="GitHub Student Developer Pack Thumbnail" class="link-thumbnail">
                                 <span class="link-title">The Cyber Extended Project Qualification</span>
                             </a>
                         </div>
 
                                                 <div class="link-item">
                             <a href="https://www.isc2.org/Certifications/CC" target="_blank" class="link-link">
-                                <img src="https://api.screenshotlayer.com/api/capture?access_key=abe555a6916cd15ca88b43f518db1359&url=https://www.isc2.org/Certifications/CC&viewport=1440x900&width=200" alt="GitHub Student Developer Pack Thumbnail" class="link-thumbnail">
                                 <span class="link-title">CC – Certified in Cybersecurity</span>
                             
                             </a>
@@ -329,33 +343,18 @@
                 }
             });
 
-            // Save the state in a cookie
-            const isOpen = dropdown.classList.contains('show');
-            document.cookie = `${id}=${isOpen}; path=/; max-age=31536000`; // Save for 1 year
-        }
-
-        // Function to load saved dropdown states
-        function loadDropdownStates() {
-            document.querySelectorAll('.dropdown-content').forEach((dropdown) => {
-                const id = dropdown.id;
-                const cookieValue = document.cookie
-                    .split('; ')
-                    .find((row) => row.startsWith(`${id}=`))
-                    ?.split('=')[1];
-
-                if (cookieValue === 'true') {
-                    dropdown.classList.add('show');
-                    // Update the arrow for open dropdowns
-                    const header = dropdown.previousElementSibling;
+            // Close all other subcategories
+            document.querySelectorAll('.category .dropdown-content').forEach((element) => {
+                if (element.id !== id && element.classList.contains('show')) {
+                    element.classList.remove('show');
+                    // Reset the arrow for other subcategories
+                    const header = element.previousElementSibling;
                     if (header) {
-                        header.innerHTML = header.innerHTML.replace('▶', '▼');
+                        header.innerHTML = header.innerHTML.replace('▼', '▶');
                     }
                 }
             });
         }
-
-        // Load dropdown states when the page loads
-        window.onload = loadDropdownStates;
     </script>
 </body>
 </html>
