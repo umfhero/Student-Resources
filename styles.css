@@ -6,11 +6,17 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 header {
-    background-color: #414141;
+    position: relative;
+    background: rgba(65, 65, 65, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
     padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin-bottom: 20px; /* Space below the header */
 }
 
 .logo-container {
@@ -26,12 +32,49 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.5rem;
+    color: #ffffff; /* Ensure text color is white */
 }
 
 header p {
     margin: 5px 0 0;
     font-size: 1.2rem;
-    color: #bbbbbb;
+    color: #dddddd; /* Slightly lighter text color */
+}
+
+.additional-logos {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.logo-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(65, 65, 65, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.additional-logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.logo-label {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+.note {
+    font-size: 0.9rem;
+    color: #dddddd;
+    text-align: center;
 }
 
 main {
@@ -156,6 +199,30 @@ main {
     border-color: #0099ff;
 }
 
+.tag {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    margin-left: 0.5em;
+    border-radius: 0.3em;
+    font-size: 0.8em;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2); /* Increased transparency */
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Increased transparency */
+}
+
+.tag-green {
+    border-color: rgba(40, 167, 69, 0.7); /* Increased transparency */
+}
+
+.tag-yellow {
+    border-color: rgba(255, 193, 7, 0.7); /* Increased transparency */
+}
+
+.tag-red {
+    border-color: rgba(220, 53, 69, 0.7); /* Increased transparency */
+}
+
 .link-item {
     margin-bottom: 15px;
 }
@@ -191,6 +258,8 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 footer p {

@@ -10,28 +10,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
-    <style>
-        .tag {
-            display: inline-block;
-            padding: 0.2em 0.5em;
-            margin-left: 0.5em;
-            border-radius: 0.3em;
-            font-size: 0.8em;
-            color: #fff;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        .tag-green {
-            border-color: rgba(40, 167, 69, 0.5);
-        }
-        .tag-yellow {
-            border-color: rgba(255, 193, 7, 0.5);
-        }
-        .tag-red {
-            border-color: rgba(220, 53, 69, 0.5);
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -40,8 +18,22 @@
         </div>
         <h1>Student Resources</h1>
         <p>Download files and explore useful links for your projects</p>
-
-
+        <div class="additional-logos">
+            <div class="logo-panel">
+                <a href="https://www.kali.org/" target="_blank">
+                    <img src="https://www.kali.org/images/kali-dragon-icon.svg" alt="Kali Linux Logo" class="additional-logo">
+                </a>
+                <p class="logo-label">Kali Linux</p>
+                <p class="note">A pentesting Linux distribution</p>
+            </div>
+            <div class="logo-panel">
+                <a href="https://www.virtualbox.org/" target="_blank">
+                    <img src="https://www.virtualbox.org/graphics/vbox_logo2_gradient.png" alt="VirtualBox Logo" class="additional-logo">
+                </a>
+                <p class="logo-label">VirtualBox</p>
+                <p class="note">Install VirtualBox and the extension pack</p>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -53,8 +45,14 @@
                 <div class="category">
                     <h3 onclick="toggleDropdown('project1', this)">🔓 Project 1: Breaking In ▶</h3>
                     <div id="project1" class="files dropdown-content">
-                        <a href="files/Password_Cracking-protected.pdf" download class="file-link">Download password protected PDF</a>
-                        <a href="files/protected.zip" download class="file-link">Download password protected Zip</a>
+                        <a href="files/Password_Cracking-protected.pdf" download class="file-link">
+                            Download password protected PDF
+                            <span class="tag tag-red">Tool: PDFCRACK</span>
+                        </a>
+                        <a href="files/protected.zip" download class="file-link">
+                            Download password protected Zip
+                            <span class="tag tag-red">Tool: John</span>
+                        </a>
                     </div>
                 </div>
 
@@ -251,37 +249,39 @@
                         <div class="link-item">
                             <a href="https://education.github.com/pack" target="_blank" class="link-link">
                                 <span class="link-title">GitHub Student Developer Pack</span>
+                                <span class="tag tag-green">Completely free while you're a student, free Copilot Pro</span>
                             </a>
                         </div>
 
                         <div class="link-item">
                             <a href="https://www.jetbrains.com/student/" target="_blank" class="link-link">
                                 <span class="link-title">JetBrains Student License</span>
+                                <span class="tag tag-green">Completely free</span>
                             </a>
                         </div>
 
                         <div class="link-item">
                             <a href="https://cloud.google.com/edu/students" target="_blank" class="link-link">
                                 <span class="link-title">GCS</span>
+                                <span class="tag tag-green">Completely free</span>
                             </a>
                         </div>
 
                         <div class="link-item">
                             <a href="https://azure.microsoft.com/en-gb/free/students" target="_blank" class="link-link">
-                                <span class="link-title">Free Azure Credit (Build in the cloud for free)</span>
+                                <span class="link-title">Free Azure Credit</span>
+                                <span class="tag tag-green">Build in the cloud for free</span>
                             </a>
                         </div>
                     </div>
                 </div>
-
-
 
                 <!-- Courses Subcategory -->
                 <div class="category">
                     <h3 onclick="toggleDropdown('student-courses', this)">📝 Courses ▶</h3>
                     <div id="student-courses" class="files dropdown-content">
                         <div class="link-item">
-                            <a href="https://www.coursera.org/professional-certificates/google-cybersecurity" target="_blank" class="link-link">
+                            <a href="https://www.coursera.org/professional-certificates/google-cybersecurity" target="_blank" class="link-link"></a>
                                 <span class="link-title">Google Cybersecurity Professional Certificate</span>
                             </a>
                         </div>
@@ -307,7 +307,7 @@
                 </div>
             </div>
         </section>
-                <!-- QR Code Panel -->
+        <!-- QR Code Panel -->
         <div class="qr-panel">
             <img src="/files/qr-code.png" alt="Join the Cybersecurity Society" class="qr-code">
             <a href="https://chat.whatsapp.com/JuLvC3Du8DeC7Jmgse54Sx" target="_blank">
